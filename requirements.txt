@@ -1,0 +1,111 @@
+# =============================================================================
+# Requirements for IRS Placement Optimization Simulation
+# Paper: Z. Esmaeilbeig et al., "Submodular Optimization for Placement of 
+#        Intelligent Reflecting Surfaces in Sensing Systems"
+# 
+# This file contains all dependencies required to run the paper-compliant
+# simulation with physics-based calibration and exact paper matching.
+# =============================================================================
+
+# ==================== CORE SCIENTIFIC COMPUTING ====================
+# Fundamental libraries for numerical computations and matrix operations
+numpy>=1.21.0, <2.0.0            # Array operations and linear algebra
+scipy>=1.7.0, <2.0.0             # Scientific computing and optimization
+pandas>=1.3.0, <2.0.0            # Data manipulation and CSV export
+
+# ==================== PLOTTING AND VISUALIZATION ====================
+# Libraries for publication-quality figures (paper-style plots)
+matplotlib>=3.5.0, <4.0.0        # Base plotting library
+seaborn>=0.11.0, <0.13.0         # Statistical visualizations
+Pillow>=9.0.0, <10.0.0           # Image processing for figure export
+
+# ==================== ADVANCED MATHEMATICAL OPERATIONS ====================
+# Additional mathematical and statistical functionality
+statsmodels>=0.13.0, <0.14.0     # Statistical models and tests
+networkx>=2.8.0, <3.0.0          # Graph theory for constraint analysis
+sympy>=1.10.0, <1.12.0           # Symbolic mathematics for validation
+
+# ==================== PERFORMANCE OPTIMIZATION ====================
+# Libraries for accelerating computations
+numba>=0.56.0, <0.58.0           # JIT compilation for speed
+joblib>=1.2.0, <1.3.0            # Parallel processing
+threadpoolctl>=3.1.0, <4.0.0     # Thread pool control
+
+# ==================== DATA SERIALIZATION AND EXPORT ====================
+# Libraries for saving results in various formats
+openpyxl>=3.0.0, <3.1.0          # Excel file support
+tables>=3.7.0, <3.8.0            # HDF5 file support
+json5>=0.9.0, <0.10.0            # Enhanced JSON support
+
+# ==================== TESTING AND VALIDATION ====================
+# Libraries for code testing and validation
+pytest>=7.0.0, <7.1.0            # Testing framework
+pytest-cov>=4.0.0, <4.1.0        # Test coverage
+hypothesis>=6.0.0, <6.1.0        # Property-based testing
+
+# ==================== DOCUMENTATION AND LOGGING ====================
+# Libraries for documentation and progress tracking
+tqdm>=4.64.0, <4.65.0            # Progress bars
+colorama>=0.4.0, <0.5.0          # Cross-platform colored terminal text
+loguru>=0.6.0, <0.7.0            # Modern logging
+
+# ==================== TYPE CHECKING AND CODE QUALITY ====================
+# Libraries for static typing and code analysis
+mypy>=0.991, <0.992              # Static type checking
+types-PyYAML>=6.0.0, <6.1.0      # Type stubs for PyYAML
+flake8>=5.0.0, <5.1.0            # Code style checking
+
+# ==================== CONFIGURATION AND SERIALIZATION ====================
+# Libraries for configuration management
+PyYAML>=6.0.0, <6.1.0            # YAML configuration files
+toml>=0.10.0, <0.11.0            # TOML configuration support
+configparser>=5.3.0, <5.4.0      # Configuration file parsing
+
+# ==================== ADVANCED VISUALIZATION (OPTIONAL) ====================
+# Optional libraries for enhanced visualization capabilities
+plotly>=5.10.0, <5.11.0          # Interactive plots
+bokeh>=2.4.0, <2.5.0             # Web-based visualizations
+ipywidgets>=8.0.0, <8.1.0        # Interactive widgets for Jupyter
+
+# ==================== PHYSICS AND ENGINEERING LIBRARIES ====================
+# Libraries for physics-based calculations and signal processing
+astropy>=5.1.0, <5.2.0           # Physical units and constants
+pint>=0.19.0, <0.20.0            # Physical quantity handling
+scikit-image>=0.19.0, <0.20.0    # Image processing for radar data
+
+# ==================== MACHINE LEARNING (FOR FUTURE EXTENSIONS) ====================
+# Libraries for potential ML-based extensions
+scikit-learn>=1.2.0, <1.3.0      # Machine learning algorithms
+torch>=1.13.0, <2.0.0            # Deep learning framework
+torchvision>=0.14.0, <0.15.0     # Vision models for sensor data
+
+# ==================== OPTIMIZATION AND SOLVERS ====================
+# Libraries for advanced optimization techniques
+cvxpy>=1.2.0, <1.3.0             # Convex optimization
+pulp>=2.6.0, <2.7.0              # Linear programming
+pyswarm>=0.6.0, <0.7.0           # Particle swarm optimization
+
+# ==================== PARALLEL PROCESSING ====================
+# Libraries for parallel and distributed computing
+mpi4py>=3.1.0, <3.2.0            # MPI parallel processing
+dask>=2022.0.0, <2023.0.0        # Parallel computing framework
+ray>=2.0.0, <2.1.0               # Distributed computing
+
+# =============================================================================
+# DEVELOPMENT AND DEBUGGING TOOLS (Optional for development)
+# =============================================================================
+# jupyter>=1.0.0, <2.0.0         # Jupyter notebook (uncomment for development)
+# ipython>=8.0.0, <9.0.0         # Enhanced interactive Python (uncomment for development)
+# debugpy>=1.6.0, <1.7.0         # Debugging support (uncomment for development)
+
+# =============================================================================
+# PLATFORM-SPECIFIC DEPENDENCIES (Automatically handled by pip)
+# =============================================================================
+# These dependencies are platform-specific and will be handled automatically
+
+# =============================================================================
+# VERSION CONSTRAINTS EXPLANATION:
+# - Upper bounds (<) prevent breaking changes from future versions
+# - Lower bounds (>=) ensure minimum required functionality
+# - Patch versions allow bug fixes but not breaking changes
+# =============================================================================
